@@ -6,14 +6,18 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cache-posts": "node scripts/cache.js",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "gray-matter": "^4.0.3",
     "marked": "^3.0.0",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
     "typescript": "^4.3.5"
   },
   "devDependencies": {
@@ -21,6 +25,7 @@
     "autoprefixer": "^10.3.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
+    "husky": "^7.0.1",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
   }
