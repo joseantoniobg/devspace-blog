@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 export default function handler(req, res) {
   let posts;
-  if (process.env.NODE_ENV === "production") {
+  if (process.env.NODE_ENV === "Production") {
     posts = require("../../cache/data").posts;
     console.log(posts);
   } else {

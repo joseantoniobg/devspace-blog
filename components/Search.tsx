@@ -16,7 +16,6 @@ export default function Search() {
         setSearchResults(response.data.results);
       }
     }
-    console.log('hum');
     getResults();
   }, [searchTerm])
 
